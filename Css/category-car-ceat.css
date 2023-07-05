@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Nunito+Sans:wght@600;700&family=Open+Sans:wght@500;600;700&family=Poppins:wght@500;600;700&family=Raleway:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CEAT-DETAIL SECTION IS HERE  */
+
+#ceat-detail {
+  margin-top: 40px;
+}
+
+#ceat-detail h1 {
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Open sans', sans-serif;
+  color: #343434;
+}
+
+#ceat-detail ul {
+  display: flex;
+  width: 180px;
+  position: relative;
+  top: 32px;
+  left: 10px;
+  color: #fff;
+}
+
+#ceat-detail ul li {
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  padding: 10px;
+}
+
+#ceat-detail ul i {
+  margin-top: 12px;
+}
+
+#ceat-detail ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#ceat-detail ul li a:hover {
+  color: rgb(255, 78, 78);
+  transition: 0.3s ease-in;
+}
+
+#ceat-detail .ceat-main-bg img {
+  width: 100%;
+  height: 75vh;
+}
+
+/* CEAT MAIN-BOX-1 IS HERE */
+
+#ceat-detail #ceat-mainbox-1 {
+  /* border: 2px solid red; */
+  height: 220px;
+  margin: 50px 10px;
+  display: flex;
+}
+
+#ceat-mainbox-1 .ceat-logo-img img {
+  height: 160px;
+  margin-top: 40px;
+}
+
+#ceat-mainbox-1 .ceat-about h2 {
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+  font-size: 23px;
+  color: #343434;
+}
+
+#ceat-mainbox-1 .ceat-about p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  color: #707070;
+}
+
+/* CEAT MAIN-BOX-2 IS HERE */
+
+#ceat-mainbox-2 .tyre-box {
+  display: flex;
+  background-color: #fff;
+  width:85%;
+  margin: 50px auto;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+/*  LEFT-BOX */
+
+.left-box {
+  flex-basis: 30%;
+  padding: 40px 60px;
+}
+
+.left-box h3 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(48, 48, 48);
+}
+
+.left-box img {
+  height: 250px;
+}
+
+/* RIGHT-BOX */
+
+.right-box {
+  flex-basis: 70%;
+  background-color: #e3e3e3;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-box .tables {
+  border-collapse: collapse;
+}
+
+.tables tbody tr td {
+  border: 2px solid silver;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 35px;
+  text-align: start;
+  padding: 5px 20px;
+}
+.tables tbody tr td:hover{
+  color: red;
+  cursor: pointer;
+}

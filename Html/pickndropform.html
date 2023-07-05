@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../Img/Favicon/Pick N Drop.png" type="image/x-icon">
+    <title>Pickup & Drop Service</title>
+    
+    <!-- CSS LINK IS HERE -->
+    <link rel="stylesheet" href="../Css/pickndropform.css" />
+
+      <!-- FONT AWESOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <img src="../Img/Forms/pick&drop.jpg" alt="Pickup & Drop" />
+      </div>
+      <div class="container-right">
+        <h1>BOOK SAMRAT TYRE <br />SERVICE ONLINE</h1>
+        <p>
+          Renew your car's tyre health with a Periodic Maintenance Service. Stay
+          home stay safe with doorstep service option.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-form">
+      <div class="contact-box">
+        <h2>Book a Service</h2>
+        <p>
+          You can book your car service appointment by filling up the form given
+          below.
+        </p>
+        <form action="#">
+          <div class="input-row">
+            <div class="input-group">
+              <label>Name</label>
+              <input type="text" placeholder="Rajesh Murav" />
+            </div>
+            <div class="input-group">
+              <label>Phone</label>
+              <input type="number" placeholder="+91 886 617 7677" /
+              required="required">
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label>State</label>
+              <input type="text" placeholder="Gujarat" />
+            </div>
+            <div class="input-group">
+              <label>City</label>
+              <input type="text" placeholder="Vadodara" />
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label>Street</label>
+              <input type="text" placeholder="St.No-07, Nr.Nana Mauva" />
+            </div>
+            <div class="input-group">
+              <label>Building / House No.</label>
+              <input type="text" placeholder="Silver Heights / 2C-302"   />
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label>Area / Live Location</label>
+              <input type="text" placeholder="Try, Kalavad Road,Race course" />
+              <a href="#"><i class="fa-solid fa-location-crosshairs"></i></a>
+            </div>
+            <div class="input-group">
+              <label>Vehicle Category</label>
+              <select
+                class="category"
+                name="category"
+                data-validate-required-message="Please Select the Vehicle Category"
+                title="Vehicle Category"
+                required="required">
+                <option selected disabled>Car/Jeep/Vam/Suv</option>
+                <option value="Motorcycle">Motorcycle-Bike/Scooter</option>
+                <option value="Car">Car-Suv/Muv</option>
+                <option value="Bus">Bus</option>
+                <option value="Truck">Truck</option>
+                <option value="Farm">Farm-Tractor/Jcb/Otr</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label>Vehicle Company Name & Model</label>
+              <input type="text" placeholder="Mahindra / Xuv700" />
+            </div>
+            <div class="input-group">
+              <label>Vehicle Category</label>
+              <select
+                class="category"
+                name="category"
+                data-validate-required-message="Please Select the Service"
+                title="Service"
+                required="required">
+                <option selected disabled>Tyre Service's</option>
+                <option value="wheel alignment">Wheel Alignment</option>
+                <option value="wheel balancing">Wheel Balancing</option>
+                <option value="new tyre fitting">New Tyre Fitting</option>
+                <option value="tyre Changing">Tyre Changing</option>
+                <option value="tyre rotation">Tyre Rotation</option>
+                <option value="tyre rotation">Tyre Repairing</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="check-box">
+            <input type="checkbox" name="" id="" />
+            <p>
+              I agree that by clicking the <b>'Book Now'</b> button below, I am
+              explicitly soliciting a call from Samrat Tyre Ltd.
+            </p>
+          </div>
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

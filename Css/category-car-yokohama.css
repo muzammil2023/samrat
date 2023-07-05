@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Nunito+Sans:wght@600;700&family=Open+Sans:wght@500;600;700&family=Poppins:wght@500;600;700&family=Raleway:wght@500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* YOKOHAMA-DETAIL SECTION IS HERE  */
+
+#yokohama-detail {
+  margin-top: 40px;
+}
+
+#yokohama-detail h1 {
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Open sans', sans-serif;
+  color: #343434;
+}
+
+#yokohama-detail ul {
+  display: flex;
+  width: 180px;
+  position: relative;
+  top: 32px;
+  left: 10px;
+  color: #fff;
+}
+
+#yokohama-detail ul li {
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  padding: 10px;
+}
+
+#yokohama-detail ul i {
+  margin-top: 12px;
+}
+
+#yokohama-detail ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#yokohama-detail ul li a:hover {
+  color: rgb(255, 78, 78);
+  transition: 0.3s ease-in;
+}
+
+#yokohama-detail .yokohama-main-bg img {
+  width: 100%;
+  height: 70vh;
+}
+
+/* YOKOHAMA MAIN-BOX-1 IS HERE */
+
+#yokohama-detail #yokohama-mainbox-1 {
+  /* border: 2px solid red; */
+  height: 220px;
+  margin: 30px 25px;
+  display: flex;
+}
+
+#yokohama-mainbox-1 .yokohama-logo-img img {
+  height: 200px;
+  margin-top: 10px;
+}
+
+#yokohama-mainbox-1 .yokohama-about h2 {
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+  font-size: 23px;
+  color: #343434;
+}
+
+#yokohama-mainbox-1 .yokohama-about p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  color: #707070;
+}
+
+/* YOKOHAMA MAIN-BOX-2 IS HERE */
+
+#yokohama-mainbox-2 .tyre-box {
+  display: flex;
+  background-color: #fff;
+  width:85%;
+  margin: 50px auto;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+/*  LEFT-BOX */
+
+.left-box {
+  flex-basis: 30%;
+  padding: 40px 60px;
+}
+
+.left-box h3 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(48, 48, 48);
+}
+
+.left-box img {
+  height: 250px;
+}
+
+/* RIGHT-BOX */
+
+.right-box {
+  flex-basis: 70%;
+  background-color: #e3e3e3;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-box .tables {
+  border-collapse: collapse;
+}
+
+.tables tbody tr td {
+  border: 2px solid silver;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 35px;
+  text-align: start;
+  padding: 5px 20px;
+}
+.tables tbody tr td:hover{
+  color: red;
+  cursor: pointer;
+}

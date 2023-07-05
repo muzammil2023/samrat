@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../Img/Favicon/Warranty.png" type="image/x-icon">
+  <title>Warranty Claim Form</title>
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="../Css/warrantyform.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-left">
+      <h1>SAMRAT TYRE REGISTRATION</h1>
+      <p>
+        It's important to Claim your tyres for the unlikely event of a recall.
+        To complete your registration in just two easy steps, you will need
+        your contact and tyre information. Let's get started.
+      </p>
+    </div>
+    <div class="container-right">
+      <img src="../Img/Forms/Warranty claim.jpg" alt="Tyre Registration" />
+    </div>
+  </div>
+
+  <div class="container-form">
+    <div class="contact-box">
+      <form action="#">
+        <h2>YOUR CONTACT INFORMATION-</h2>
+        <div class="input-row">
+          <div class="input-group">
+            <label>Name</label>
+            <input type="text" placeholder="Ajay Murav" />
+          </div>
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Ajaymurav@gmail.com" / required="required">
+          </div>
+          <div class="input-group">
+            <label>Phone</label>
+            <input type="number" placeholder="+91 903 349 7582" / required="required">
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label>Vehicle Category</label>
+            <select class="category" name="category" data-validate-required-message="Please Select the Vehicle Category"
+              title="Vehicle Category" required="required">
+              <option selected disabled>Bike/Car/Bus/Truck/Otr</option>
+              <option value="Motorcycle">Motorcycle-Bike/scooter</option>
+              <option value="Car">Car-Suv/Muv</option>
+              <option value="Bus">Bus</option>
+              <option value="Truck">Truck</option>
+              <option value="Farm">Farm-Tractor/Jcb/Otr</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>Vehicle Company Name & Model</label>
+            <input type="text" placeholder="Tata / Safari Xz+" />
+          </div>
+          <div class="input-group">
+            <label>Odometer Reading</label>
+            <input type="number" placeholder="18,000 Km's" / required="required">
+          </div>
+        </div>
+
+        <h2>TYRE INFORMATION-</h2>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label>Purchase Invoice</label>
+            <input type="text" placeholder="SAM021022" />
+          </div>
+          <div class="input-group">
+            <label>Tyre Company</label>
+            <select class="category" name="category" data-validate-required-message="Please Select the Tyre Company"
+              title="Tyre Company" required="required">
+              <option selected disabled>Apollo Tyres</option>
+              <option value="apollo">Apollo</option>
+              <option value="ceat">Ceat</option>
+              <option value="bridgestone">Bridgestone</option>
+              <option value="firestone">Firestone</option>
+              <option value="continental">Continental</option>
+              <option value="yokohama">Yokohama</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>Tyre Size</label>
+            <input type="text" placeholder="195/55 R16 87H" />
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label>Tyre Quantity</label>
+            <input type="number" placeholder="02" / required="required">
+          </div>
+          <div class="input-group">
+            <label>Tyre Number</label>
+            <input type="file" name="Tyre Number" id="" />
+          </div>
+          <div class="input-group">
+            <label>Tyre Barcode</label>
+            <input type="file" name="Tyre Barcode" id="" />
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

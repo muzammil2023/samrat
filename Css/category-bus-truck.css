@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Nunito+Sans:wght@600;700&family=Open+Sans:wght@500;600;700&family=Poppins:wght@500;600;700&family=Raleway:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BUS MAIN-HEADER SECTION IS HERE */
+
+#bt-main-header h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  color: #343434
+}
+
+#bt-main-header ul {
+  display: flex;
+  width: 180px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+  color: #fff;
+}
+
+#bt-main-header ul li {
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Raleway',sans-serif;
+  color: #fff;
+  padding: 10px;
+}
+
+#bt-main-header ul i{
+  margin-top: 12px;
+}
+#bt-main-header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#bt-main-header ul li a:hover{
+  color: rgb(255, 78, 78);
+  transition: 0.3s ease-in;
+}
+
+#bt-main-header img {
+  width: 100%;
+  height: 50vh;
+}
+
+.container {
+  width: 90%;
+  padding: 20px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .m-boxes {
+  height: 75px;
+  width: 140px;
+  margin: 0 30px;
+  transition: 1s;
+}
+
+.container .m-boxes img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 4/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container .m-boxes:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}

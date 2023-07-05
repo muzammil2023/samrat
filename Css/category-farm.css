@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Nunito+Sans&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*FARM-MAIN-BOX-1 IS HERE */
+
+#farm-mainbox-1 ul {
+  display: flex;
+  width: 180px;
+  position: relative;
+  top: 32px;
+  left: 10px;
+  color: #fff;
+}
+
+#farm-mainbox-1 ul li {
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  padding: 10px;
+}
+
+#farm-mainbox-1 ul i {
+  margin-top: 12px;
+}
+
+#farm-mainbox-1 ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#farm-mainbox-1 ul li a:hover {
+  color: rgb(255, 78, 78);
+  transition: 0.3s ease-in;
+}
+
+#farm-mainbox-1 .main-bg img {
+  width: 100%;
+  height: 70vh;
+}
+
+#farm-mainbox-1 .farm-info {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#farm-mainbox-1 .farm-info h2 {
+  font-family: 'Arimo', sans-serif;
+  font-size: 25px;
+}
+
+#farm-mainbox-1 .farm-info pre {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* FARM-APOLLO-DETAILS SECTION IS HERE */
+
+#farm-apollo-details img {
+  height: 70px;
+  position: relative;
+  left: 39%;
+}
+
+/* APOLLO-BOX IS HERE */
+
+#farm-apollo-details #apollo-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#apollo-box .box {
+  height: 320px;
+  width: 20%;
+  text-align: center;
+  margin: 40px 35px 0 20px;
+  padding: 20px 0;
+  border-radius: 5px 20px 5px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  border-right: 1px solid silver;
+  border-bottom: 2px solid silver;
+}
+
+#apollo-box .box img {
+  display: block;
+  margin-left: -60px;
+  height: 230px;
+  cursor: pointer;
+}
+
+#apollo-box .box h3 {
+  font-size: 23px;
+  padding-top: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* TYRE-SIZE-CHART SECTION IS HERE */
+
+#tyre-size-chart {
+  margin-top: 20px;
+  display: flex;
+}
+
+/* TABLE IS HERE */
+
+#tyre-size-chart .tables {
+  width: 30%;
+  border-collapse: collapse;
+  margin: 50px 0 20px 30px;
+  font-family: 'Poppins',sans-serif;
+  color: black;
+}
+
+.tables thead tr th {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  line-height: 35px;
+  text-align: start;
+  padding: 0 20px;
+  background-color: yellow;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.tables tbody tr td {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 35px;
+  padding: 0 20px;
+  border: 1px solid grey;
+  text-align: center;
+  background-color: #ccc;
+  color: black;
+}

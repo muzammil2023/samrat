@@ -7,6 +7,58 @@
   box-sizing: border-box;
 }
 
+.main {
+  /* border-style: dotted; */
+}
+
+header {
+  width: 100%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
 /* STICKY WHATSAPP SECTION */
 
 .float-btn {
@@ -59,30 +111,34 @@
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-content: center;
   line-height: 6rem;
+  padding: 1rem;
 }
 
+.nav-left{
+  /* max-width: 50%; */
+
+}
+
+.nav-left > .burger{
+  margin-right: 1rem;
+}
+
+
 .nav-left img {
-  height: 110px;
-  width: 200px;
-  margin-left: 40px;
+  max-width: 120px;
   cursor: pointer;
 }
 
 .nav-center ul {
-  display: flex;
   list-style: none;
-  margin-top: 20px;
-  padding-left: 0;
-  border-bottom: 1px solid grey;
 }
 
 .nav-center ul li a {
-  padding: 10px 15px;
   font-size: 1.2rem;
-  color: black;
+  color: white;
   cursor: pointer;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -90,7 +146,7 @@
 }
 
 .nav-center ul li {
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.5s;
 }
 
 .nav-center ul li:hover {
@@ -103,7 +159,6 @@
 }
 
 .nav-right {
-  margin-right: 40px;
 }
 
 .f-btn {
@@ -111,7 +166,7 @@
   color: #fff;
   padding: 10px 15px;
   border-radius: 2px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(to right, rgba(237, 33, 58, 0.9), rgba(147, 41, 30, 0.9));
   transition: all ease-in-out 0.3s;
@@ -155,8 +210,14 @@
 
 #home .col-8 {
   position: relative;
-  bottom: 20px;
-  right: 35px;
+  /* bottom: 20px; */
+  /* right: 35px; */
+}
+
+@media screen and (max-width: 450px) {
+  #home .col-8 {
+    width: 100% !important;
+  }
 }
 
 #home .col-8 h1 {
@@ -200,6 +261,7 @@
 
 #category {
   margin-top: 20px;
+  overflow: hidden;
 }
 
 #category h1 {
@@ -222,16 +284,16 @@
 
 #category-box {
   display: flex;
-  padding-left: 40px;
+  justify-content: center;
+  /* padding-left: 40px; */
   /* background: linear-gradient(to right, rgba(51, 51, 51, 0.5), rgba(221, 24, 24, 0.7)); */
 }
 
 #category-box .box {
   height: 350px;
-  width: 20%;
   text-align: center;
-  margin: 50px 40px 50px 0;
-  padding: 30px;
+  margin: 10px ;
+  /* padding: 30px; */
   border-radius: 5px 20px 5px;
   transition: ease-out 0.5s;
 }
@@ -282,22 +344,19 @@
 }
 
 #product-main-box {
-  display: flex;
-  position: relative;
-  height: 450px;
+
   width: 100%;
   margin-top: 50px;
 }
 
 #product-main-box .product-box {
-  position: relative;
   height: 380px;
   width: 280px;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  margin: 20px;
+  margin: 5px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
   /* border-bottom: 1px solid silver;
   border-right:  1px solid silver; */
 }
@@ -308,16 +367,16 @@
 
 .product-box .thefront {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 380px;
   backface-visibility: hidden;
   border-radius: 10px;
 }
 
 .product-box .theback {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 380px;
   backface-visibility: hidden;
   background: #fafafa;
   transform: rotateY(180deg);
@@ -490,10 +549,10 @@
   height: 300px;
 }
 
-.about-left img:hover{
-cursor: pointer;
-transition: 0.5s;
-opacity: 0.9;
+.about-left img:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.9;
 }
 
 /* ABOUT-RIGHT */
@@ -513,7 +572,7 @@ opacity: 0.9;
   color: #343434;
 }
 
-.about-right .aboutus-info hr{
+.about-right .aboutus-info hr {
   color: #343434;
 }
 
@@ -530,6 +589,8 @@ opacity: 0.9;
 
 #testinomal {
   min-height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
   background-color: #fff;
 }
 
@@ -553,11 +614,11 @@ opacity: 0.9;
 
 .slide-container {
   margin-top: 50px;
-  height: 420px;
-  min-width: 1120px;
+  height: 520px;
   width: 100%;
   background-color: white;
 }
+
 
 .slide-content {
   margin: 0 40px;
@@ -566,6 +627,10 @@ opacity: 0.9;
 .card {
   border-radius: 25px;
   color: #fff;
+}
+
+.m-col-1{
+  min-width: 360px !important;
 }
 
 .image-content,
@@ -696,16 +761,15 @@ opacity: 0.9;
 
 .flex {
   display: flex;
-  min-height: 70vh;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   width: 100%;
+  margin: 0px auto !important;
+
 }
 
 .flex-item {
-  height: 70vh;
-  width: 40%;
   background-color: #fff;
   border-bottom: 2px solid silver;
   border-right: 2px solid silver;
@@ -714,7 +778,10 @@ opacity: 0.9;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
-  margin: 30px;
+  padding: 0 !important;
+  height: 31rem;
+  margin: 5px !important;
+
 }
 
 .flex-item:hover {
@@ -754,6 +821,10 @@ opacity: 0.9;
   color: #343434;
 }
 
+.card-c{
+
+}
+
 .card-c a {
   position: relative;
   left: 43px;
@@ -773,7 +844,7 @@ opacity: 0.9;
   background: linear-gradient(to right, #ed213a, #93291e);
 }
 
-.phone-card{
+.phone-card {
   font-size: 18px;
   color: #000;
   margin-bottom: 20px;
@@ -786,7 +857,7 @@ opacity: 0.9;
 /* CONTACT US SECTION */
 
 #contact-us {
-  padding: 30px 50px;
+  padding: 30px 16px;
 }
 
 #contact-us h1 {
@@ -799,7 +870,7 @@ opacity: 0.9;
 
 #contactus-box {
   display: flex;
-  margin: 20px 0 30px 0;
+  /* margin: 20px 0 30px 0; */
 }
 
 /* CONTAINER-1 */
@@ -820,7 +891,7 @@ opacity: 0.9;
 /* CONTAINER-2 */
 
 .container-2 {
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 .container-2 .cnct-box {
@@ -864,8 +935,8 @@ opacity: 0.9;
 /* CONTAINER-3 */
 
 .container-3 {
-  width: 40%;
-  margin-left: 20px;
+  /* width: 40%; */
+  /* margin-left: 20px; */
 }
 
 .contactForm {

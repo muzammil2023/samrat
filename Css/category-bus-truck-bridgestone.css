@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* BRIDGESTONE-MAINBOX-1 */
@@ -44,6 +45,8 @@
   height: 68vh;
 }
 
+
+
 #bridgestone-mainbox-1 .bridgestone-logo-img {
   display: inline-block;
   position: relative;
@@ -80,7 +83,7 @@
   font-size: 25px;
 }
 
-#bridgestone-mainbox-1 .bridgestone-para pre {
+#bridgestone-mainbox-1 .bridgestone-para span {
   font-size: 18px;
   margin-top: 30px;
   font-family: 'Poppins', sans-serif;
@@ -88,6 +91,65 @@
 }
 
 /* BRIDGESTONE-MAINBOX-1 */
+@media screen and (max-width: 450px) {
+ 
+  *{
+    margin-left: 1px;
+  }
+  #bridgestone-mainbox-1
+  {
+    width: 100%;
+  }
+  #bridgestone-mainbox-1 .bridgestone-main-bg img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  #bridgestone-mainbox-1 .bridgestone-logo-img {
+    display: block;
+    position: relative;
+    bottom: 110px;
+    left: 10%;
+  }
+  
+  #bridgestone-mainbox-1 .bridgestone-logo-img img {
+    height: 70px;
+  }
+  
+  #bridgestone-mainbox-1 .bridgestone-about {
+    display: block;
+    position: relative;
+    bottom: 210px;
+    left: 16%;
+  }
+  
+  #bridgestone-mainbox-1 .bridgestone-about h1 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #bridgestone-mainbox-1 .bridgestone-para {
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+  }
+  
+  #bridgestone-mainbox-1 .bridgestone-para h2 {
+    font-family: 'Open sans', sans-serif;
+    color: #343434;
+    font-size: 20px;
+  }
+  
+  #bridgestone-mainbox-1 .bridgestone-para span {
+    font-size: 13px;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #707070;
+    width: 100%;
+  }
+}
+
 
 #bridgestone-mainbox-2{
   margin-top: -50px;
@@ -123,4 +185,43 @@
 #bridgestone-mainbox-2 #size-chart img:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 450px) {
+  #bridgestone-mainbox-2{
+    margin-top: -50px;
+  }
+  
+  #bridgestone-mainbox-2 h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    color: #343434;
+  }
+  
+  #bridgestone-mainbox-2 #tyre-chart a img {
+    height: 300vh;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  
+  #bridgestone-mainbox-2 #vehicle-chart img {
+    height: 95vh;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  
+  #bridgestone-mainbox-2 #size-chart img {
+    height: 60vh;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  
+  #bridgestone-mainbox-2 #tyre-chart a img:hover,
+  #bridgestone-mainbox-2 #vehicle-chart img:hover,
+  #bridgestone-mainbox-2 #size-chart img:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+  }
 }

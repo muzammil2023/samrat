@@ -43,6 +43,45 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 450px) {
+  .container {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .container-left {
+    flex-basis: 50%;
+  }
+  
+  .container-left img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .container-right {
+    flex-basis: 50%;
+    padding: 40px 60px;
+    background-color: #dd1818e6;
+    color: #fff;
+  }
+  
+  .container-right h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .container-right p {
+    font-size: 16px;
+  }
+}
+
 /* CONTAINER-FORM */
 
 .container-form {
@@ -147,4 +186,114 @@ button:hover {
   transform: translateY(-5px);
   font-size: 15px;
   border-radius: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .container-form {
+    width: 100%;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+  
+  .contact-box h2 {
+    font-size: 25px;
+    margin: 30px 0 5px 0;
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+  }
+  
+  .contact-box>p {
+    color: rgb(48, 48, 48);
+    margin-bottom: 50px;
+  }
+  
+  .input-row {
+    display: inline-block;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-row .input-group {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .input-row .input-group a i {
+    color: blue;
+    position: relative;
+    right: 30px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .input-row .input-group a i:hover {
+    color: #dd1818e6;
+    transform: translateY(-5px);
+    margin-bottom: 20px;
+  }
+  
+  input,
+  .category {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  
+  textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+  }
+  
+  label {
+    margin-bottom: 6px;
+    display: block;
+    color: #dd1818e6;
+    font-size: 18px;
+  }
+  
+  .check-box {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .check-box>input {
+    height: 18px;
+    width: 30px;
+    margin: 3px 20px 10px 0;
+  }
+  
+  .check-box>p {
+    font-size: 15px;
+    color: rgb(48, 48, 48);
+    ;
+  }
+  
+  button {
+    background: #dd1818e6;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 5px;
+    margin: 20px 0 40px 0;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: translateY(-5px);
+    font-size: 15px;
+    border-radius: 0;
+  }
+  
 }
